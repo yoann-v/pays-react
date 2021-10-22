@@ -43,7 +43,7 @@ const Countries = () => {
                     {radios.map((radio) => {
                         return (
                             <li key={radio}>
-                                <input type="radio" value={radio} id="{radio}" checked={radio == selectedRadio} onChange={(e) => setSelectedRadio(e.target.value)} />
+                                <input type="radio" value={radio} id="{radio}" checked={radio === selectedRadio} onChange={(e) => setSelectedRadio(e.target.value)} />
                                 <label htmlfor={radio}>{radio}</label> 
                             </li>
                         )
